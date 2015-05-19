@@ -1,5 +1,5 @@
 <% if IncludeFormTag %>
-<form class="form" $AttributesHTML>
+<form $AttributesHTML>
 <% end_if %>
 	<% if Message %>
 	<div id="{$FormName}_error" class="alert message $MessageType <% if $MessageType == 'good' %>alert-success<% else_if $MessageType == 'bad' %>alert-danger<% else_if $MessageType == 'warning' %>alert-warning<% end_if %>">
